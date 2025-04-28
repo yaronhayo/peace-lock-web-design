@@ -55,7 +55,7 @@ const Navbar = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center space-x-2">
-              <span className="text-2xl font-bold text-white">Peace<span className="text-lime">&amp;Lock</span></span>
+              <span className="text-2xl font-bold text-white">Peace<span className="text-lime-600">Lock</span></span>
             </Link>
 
             <nav className="hidden md:flex items-center space-x-8">
@@ -65,14 +65,14 @@ const Navbar = () => {
                   to={link.path}
                   className={`font-medium transition-colors duration-200 ${
                     isActive(link.path) 
-                      ? 'text-lime' 
-                      : 'text-white hover:text-lime'
+                      ? 'text-lime-600' 
+                      : 'text-white hover:text-lime-600'
                   }`}
                 >
                   {link.name}
                 </Link>
               ))}
-              <Button className="emergency-btn text-navy-600">
+              <Button className="emergency-btn text-white">
                 <a href="tel:+18001234567">Emergency: 800-123-4567</a>
               </Button>
             </nav>
@@ -107,15 +107,15 @@ const Navbar = () => {
                   to={link.path}
                   className={`block py-2 ${
                     isActive(link.path) 
-                      ? 'text-lime' 
-                      : 'text-white hover:text-lime'
+                      ? 'text-lime-600' 
+                      : 'text-white hover:text-lime-600'
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.name}
                 </Link>
               ))}
-              <Button className="emergency-btn text-navy-600 w-full mt-4">
+              <Button className="emergency-btn text-white w-full mt-4">
                 <a href="tel:+18001234567">Emergency: 800-123-4567</a>
               </Button>
             </nav>
@@ -125,7 +125,7 @@ const Navbar = () => {
 
       <button
         onClick={scrollToTop}
-        className={`fixed bottom-20 right-8 p-3 rounded-full bg-lime text-navy-600 shadow-lg transition-all duration-300 hover:bg-lime-400 focus:outline-none focus:ring-2 focus:ring-lime-300 ${
+        className={`fixed bottom-1/2 right-8 p-3 rounded-full bg-lime-600 text-white shadow-lg transition-all duration-300 hover:bg-lime-500 focus:outline-none focus:ring-2 focus:ring-lime-400 ${
           showScrollTop ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'
         }`}
         aria-label="Scroll to top"

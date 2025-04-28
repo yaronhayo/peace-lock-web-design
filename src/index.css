@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
@@ -89,7 +88,7 @@
   }
   
   .btn-primary {
-    @apply bg-lime text-navy-600 font-bold py-3 px-6 rounded-md hover:bg-lime-400 transition-colors;
+    @apply bg-lime-600 text-white font-bold py-3 px-6 rounded-md hover:bg-lime-500 transition-colors;
   }
   
   .btn-secondary {
@@ -97,7 +96,7 @@
   }
   
   .emergency-btn {
-    @apply bg-navy-300 text-white font-bold py-3 px-6 rounded-md hover:bg-lime-400 hover:text-navy-600 border border-white transition-colors;
+    @apply bg-navy-300 text-white font-bold py-3 px-6 rounded-md hover:bg-lime-600 hover:text-white border border-white transition-colors;
   }
   
   .section-title {
@@ -109,7 +108,7 @@
   }
 
   .underline-effect {
-    @apply relative after:absolute after:bottom-0 after:left-0 after:h-1 after:w-16 after:bg-lime after:rounded;
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-1 after:w-16 after:bg-lime-600 after:rounded;
   }
 }
 
