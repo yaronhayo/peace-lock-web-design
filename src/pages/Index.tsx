@@ -5,35 +5,37 @@ import ServicesList from "@/components/home/ServicesList";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import TestimonialsCarousel from "@/components/home/TestimonialsCarousel";
 import ServiceAreas from "@/components/home/ServiceAreas";
+import TrustBadges from "@/components/home/TrustBadges";
+import EmergencyBanner from "@/components/home/EmergencyBanner";
 
 const Index = () => {
   const services = [
     {
       title: "Residential Locksmith",
-      description: "Keep your home secure with our comprehensive residential locksmith services.",
-      icon: "🏠",
-      features: ["Lock Installation & Repair", "Key Duplication", "Home Security Upgrades", "Smart Lock Installation"],
+      description: "Protect your home and loved ones with our comprehensive residential locksmith solutions.",
+      icon: "Home",
+      features: ["Quick Lock Installation & Repair", "Precision Key Duplication", "Advanced Home Security Upgrades", "Smart Lock Installation"],
       link: "/services#residential"
     },
     {
       title: "Commercial Locksmith",
-      description: "Protect your business with high-security commercial locksmith solutions.",
-      icon: "🏢",
-      features: ["Master Key Systems", "Access Control", "Commercial Door Repair", "Business Security Consultation"],
+      description: "Safeguard your business with high-security commercial locksmith expertise.",
+      icon: "Building",
+      features: ["Custom Master Key Systems", "Modern Access Control", "Reliable Door Repair", "Expert Security Consultation"],
       link: "/services#commercial"
     },
     {
       title: "Automotive Locksmith",
-      description: "Back on the road quickly with our fast, reliable automotive locksmith services.",
-      icon: "🚗",
-      features: ["Car Lockouts", "Key Replacement", "Ignition Repair", "Transponder Key Programming"],
+      description: "Back on the road in minutes with our fast, reliable automotive locksmith services.",
+      icon: "Car",
+      features: ["Emergency Car Lockouts", "Immediate Key Replacement", "Professional Ignition Repair", "Advanced Transponder Programming"],
       link: "/services#automotive"
     },
     {
       title: "Emergency Services",
-      description: "24/7 emergency locksmith services when you need them most.",
-      icon: "🔓",
-      features: ["Rapid Response", "Lockout Assistance", "Lock Repairs", "Break-in Damage Repair"],
+      description: "24/7 emergency locksmith response when security matters most.",
+      icon: "ShieldCheck",
+      features: ["15-Minute Response Time", "Immediate Lockout Assistance", "Expert Lock Repairs", "Break-in Damage Remediation"],
       link: "/services#emergency"
     }
   ];
@@ -45,8 +47,10 @@ const Index = () => {
   ];
 
   return (
-    <div>
+    <div className="animate-fade-in">
+      <EmergencyBanner />
       <Hero />
+      <TrustBadges />
       <ServicesList services={services} />
       <WhyChooseUs />
       <TestimonialsCarousel />
