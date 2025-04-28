@@ -56,10 +56,17 @@ const TestimonialsCarousel = ({ testimonials }: TestimonialsCarouselProps) => {
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
-          <Carousel setApi={setApi} className="w-full">
-            <CarouselContent>
+          <Carousel 
+            setApi={setApi} 
+            className="w-full"
+            opts={{
+              align: "start",
+              loop: true
+            }}
+          >
+            <CarouselContent className="grid grid-cols-4 gap-6">
               {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="flex justify-center">
+                <CarouselItem key={index} className="col-span-1">
                   <TestimonialCard {...testimonial} />
                 </CarouselItem>
               ))}

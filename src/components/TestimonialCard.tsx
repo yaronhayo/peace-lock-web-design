@@ -10,7 +10,7 @@ interface TestimonialCardProps {
 
 const TestimonialCard = ({ quote, author, location, rating }: TestimonialCardProps) => {
   return (
-    <Card className="bg-white border-none shadow-lg h-[300px] w-[300px] mx-auto">
+    <Card className="bg-white border-none shadow-lg h-[250px] w-[250px] mx-auto">
       <CardContent className="pt-6 h-full flex flex-col justify-between">
         <div>
           <div className="flex mb-4">
