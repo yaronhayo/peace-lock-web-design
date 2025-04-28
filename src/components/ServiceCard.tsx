@@ -13,16 +13,15 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ title, description, icon, features, link }: ServiceCardProps) => {
-  // Get the correct icon component from LucideIcons
-  const IconComponent = LucideIcons[icon];
+  // Get the icon component dynamically from LucideIcons
+  const IconComponent = LucideIcons[icon] as React.ElementType;
   
   return (
     <Card className="transition-all duration-300 hover:shadow-lg bg-white border-none hover:shadow-navy-100 h-full">
       <CardHeader className="pb-2">
         <div className="flex justify-center">
           <div className="w-16 h-16 bg-navy-50 rounded-full flex items-center justify-center text-navy-500 mb-4">
-            {/* Render the icon component correctly */}
-            {IconComponent && <IconComponent className="w-8 h-8" />}
+            <IconComponent className="w-8 h-8" />
           </div>
         </div>
         <CardTitle className="text-xl text-navy-600 text-center">{title}</CardTitle>
