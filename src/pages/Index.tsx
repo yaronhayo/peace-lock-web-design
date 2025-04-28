@@ -1,4 +1,3 @@
-
 import Hero from "@/components/Hero";
 import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
@@ -84,7 +83,7 @@ const Index = () => {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Button className="btn-secondary" asChild>
+            <Button className="btn-secondary text-gray-800" asChild>
               <Link to="/services">View All Services</Link>
             </Button>
           </div>
