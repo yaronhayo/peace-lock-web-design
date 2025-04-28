@@ -5,6 +5,9 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi
 } from "@/components/ui/carousel";
 
 interface Testimonial {
@@ -19,7 +22,7 @@ interface TestimonialsCarouselProps {
 }
 
 const TestimonialsCarousel = ({ testimonials }: TestimonialsCarouselProps) => {
-  const [api, setApi] = useState<any>();
+  const [api, setApi] = useState<CarouselApi | null>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
 
@@ -76,6 +79,8 @@ const TestimonialsCarousel = ({ testimonials }: TestimonialsCarouselProps) => {
                 </CarouselItem>
               ))}
             </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
           </Carousel>
           
           <div className="flex justify-center gap-2 mt-6">

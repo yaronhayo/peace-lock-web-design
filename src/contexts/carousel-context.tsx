@@ -3,7 +3,7 @@ import * as React from "react"
 import type { UseEmblaCarouselType } from "embla-carousel-react"
 import type { CarouselApi, CarouselOptions, CarouselPlugin } from "@/hooks/use-carousel"
 
-type EmblaViewportRefType = UseEmblaCarouselType[0]
+type EmblaViewportRefType = React.MutableRefObject<HTMLDivElement | null>
 
 type CarouselContextProps = {
   carouselRef: EmblaViewportRefType
