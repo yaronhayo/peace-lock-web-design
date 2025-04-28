@@ -1,3 +1,4 @@
+
 import Hero from "@/components/Hero";
 import CTA from "@/components/CTA";
 import ServicesList from "@/components/home/ServicesList";
@@ -35,7 +36,7 @@ const Index = () => {
       title: "Emergency Services",
       description: "24/7 emergency locksmith response when security matters most.",
       icon: "ShieldCheck" as keyof typeof LucideIcons,
-      features: ["15-Minute Response Time", "Immediate Lockout Assistance", "Expert Lock Repairs", "Break-in Damage Remediation"],
+      features: ["24/7 Emergency Assistance", "Immediate Lockout Assistance", "Expert Lock Repairs", "Break-in Damage Remediation"],
       link: "/services#emergency"
     }
   ];

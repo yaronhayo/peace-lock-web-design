@@ -12,8 +12,8 @@ const WhyChooseUs = () => {
   const reasons: Reason[] = [
     {
       icon: <Zap className="w-8 h-8" />,
-      title: "Fast Response Time",
-      description: "We respond quickly in emergency situations, ensuring minimal disruption to your day."
+      title: "Reliable Service",
+      description: "We provide dependable service in emergency situations, ensuring minimal disruption to your day."
     },
     {
       icon: <ShieldCheck className="w-8 h-8" />,

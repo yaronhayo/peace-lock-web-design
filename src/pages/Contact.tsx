@@ -180,7 +180,7 @@ const Contact = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-lg font-bold text-navy-600 mb-3">How quickly can you respond to an emergency?</h3>
               <p className="text-gray-600">
-                Our average response time is 15-30 minutes in most areas of New Jersey. We have mobile technicians strategically positioned to provide fast service.
+                We have mobile technicians strategically positioned throughout New Jersey to provide prompt service.
               </p>
             </div>
             

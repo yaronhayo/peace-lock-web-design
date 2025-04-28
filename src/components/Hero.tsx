@@ -37,8 +37,8 @@ const Hero = () => {
                 <div className="text-white text-sm">Emergency Service</div>
               </div>
               <div className="flex flex-col items-center text-center p-4 bg-navy-400/30 rounded-lg backdrop-blur-sm">
-                <div className="text-lime text-3xl font-bold mb-1">15m</div>
-                <div className="text-white text-sm">Response Time</div>
+                <div className="text-lime text-3xl font-bold mb-1">Pro</div>
+                <div className="text-white text-sm">Service</div>
               </div>
               <div className="flex flex-col items-center text-center p-4 bg-navy-400/30 rounded-lg backdrop-blur-sm">
                 <div className="text-lime text-3xl font-bold mb-1">100%</div>

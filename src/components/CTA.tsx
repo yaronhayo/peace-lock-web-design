@@ -20,7 +20,7 @@ const CTA = () => {
               Locked Out? We're On Our Way
             </h2>
             <p className="text-gray-300 text-lg max-w-lg">
-              Our emergency locksmith technicians are standing by 24/7, ready to respond to your call within minutes. Don't stay locked out.
+              Our emergency locksmith technicians are standing by 24/7, ready to assist whenever you need us. Don't stay locked out.
             </p>
             <div className="mt-4 flex items-center text-lime">
               <Clock className="mr-2" size={18} />
