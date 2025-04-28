@@ -1,9 +1,10 @@
+
 import Hero from "@/components/Hero";
-import ServiceCard from "@/components/ServiceCard";
-import TestimonialCard from "@/components/TestimonialCard";
 import CTA from "@/components/CTA";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import ServicesList from "@/components/home/ServicesList";
+import WhyChooseUs from "@/components/home/WhyChooseUs";
+import TestimonialsCarousel from "@/components/home/TestimonialsCarousel";
+import ServiceAreas from "@/components/home/ServiceAreas";
 
 const Index = () => {
   const services = [
@@ -67,149 +68,10 @@ const Index = () => {
   return (
     <div>
       <Hero />
-      
-      {/* Services Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="section-title mb-4">Our Professional Locksmith Services</h2>
-            <p className="section-subtitle max-w-3xl mx-auto">
-              From emergency lockouts to high-security installations, Peace & Lock offers comprehensive locksmith solutions for residential, commercial, and automotive needs.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.map((service, index) => (
-              <ServiceCard key={index} {...service} />
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <Button className="btn-secondary text-gray-800" asChild>
-              <Link to="/services">View All Services</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose Us Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="section-title mb-4">Why Choose Peace & Lock</h2>
-            <p className="section-subtitle max-w-3xl mx-auto">
-              With years of experience and a commitment to excellence, we provide reliable locksmith services you can trust.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Reason 1 */}
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6 mx-auto">
-                ⚡
-              </div>
-              <h3 className="text-xl font-bold text-navy-600 mb-3 text-center">Fast Response Time</h3>
-              <p className="text-gray-600">
-                We understand that lockouts and security issues require immediate attention. Our average response time is just 15-30 minutes.
-              </p>
-            </div>
-            
-            {/* Reason 2 */}
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6 mx-auto">
-                🔒
-              </div>
-              <h3 className="text-xl font-bold text-navy-600 mb-3 text-center">Licensed & Insured</h3>
-              <p className="text-gray-600">
-                Peace & Lock is a fully licensed, bonded, and insured locksmith company serving New Jersey with the highest standards.
-              </p>
-            </div>
-            
-            {/* Reason 3 */}
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6 mx-auto">
-                💰
-              </div>
-              <h3 className="text-xl font-bold text-navy-600 mb-3 text-center">Competitive Pricing</h3>
-              <p className="text-gray-600">
-                We offer transparent pricing with no hidden fees. Get high-quality locksmith services at affordable rates.
-              </p>
-            </div>
-            
-            {/* Reason 4 */}
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6 mx-auto">
-                🛠️
-              </div>
-              <h3 className="text-xl font-bold text-navy-600 mb-3 text-center">Advanced Technology</h3>
-              <p className="text-gray-600">
-                We stay updated with the latest locksmith tools and technologies to provide you with modern security solutions.
-              </p>
-            </div>
-            
-            {/* Reason 5 */}
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6 mx-auto">
-                👨‍🔧
-              </div>
-              <h3 className="text-xl font-bold text-navy-600 mb-3 text-center">Experienced Locksmiths</h3>
-              <p className="text-gray-600">
-                Our team consists of highly trained and experienced locksmiths who can handle any lock and key issue.
-              </p>
-            </div>
-            
-            {/* Reason 6 */}
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6 mx-auto">
-                ✅
-              </div>
-              <h3 className="text-xl font-bold text-navy-600 mb-3 text-center">Satisfaction Guarantee</h3>
-              <p className="text-gray-600">
-                We're not satisfied until you are. Our work comes with a 100% satisfaction guarantee for your peace of mind.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* Testimonials Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="section-title mb-4">What Our Customers Say</h2>
-            <p className="section-subtitle max-w-3xl mx-auto">
-              Don't just take our word for it. See what our satisfied customers have to say about our locksmith services.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <TestimonialCard key={index} {...testimonial} />
-            ))}
-          </div>
-        </div>
-      </section>
-      
-      {/* Areas We Serve */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="section-title mb-4">Areas We Serve in New Jersey</h2>
-            <p className="section-subtitle max-w-3xl mx-auto">
-              Our mobile locksmith service covers all of New Jersey, providing fast and reliable locksmith services wherever you need us.
-            </p>
-          </div>
-          <div className="flex flex-wrap justify-center gap-4">
-            {locationServed.map((location, index) => (
-              <div key={index} className="bg-navy-50 px-6 py-3 rounded-full text-navy-600 font-medium">
-                {location}, NJ
-              </div>
-            ))}
-            <div className="bg-navy-50 px-6 py-3 rounded-full text-navy-600 font-medium">
-              And Many More...
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* CTA Section */}
+      <ServicesList services={services} />
+      <WhyChooseUs />
+      <TestimonialsCarousel testimonials={testimonials} />
+      <ServiceAreas locations={locationServed} />
       <CTA />
     </div>
   );
