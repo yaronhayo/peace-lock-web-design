@@ -26,7 +26,7 @@ const Hero = () => {
               <Button className="bg-lime text-navy-600 font-bold hover:bg-lime-400 transition-colors" asChild>
                 <Link to="/services">View Services</Link>
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white/10" asChild>
+              <Button variant="outline" className="border-white text-white bg-navy-400 hover:bg-lime hover:text-navy-600 transition-colors" asChild>
                 <a href="tel:+18001234567"><Phone className="mr-2" /> 800-123-4567</a>
               </Button>
             </div>
