@@ -9,6 +9,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import { useEffect, useRef } from "react";
 
 const Index = () => {
   const services = [
@@ -74,6 +75,20 @@ const Index = () => {
     "Trenton", "Camden", "Passaic", "Union City", "Bayonne",
     "East Orange", "Vineland", "New Brunswick", "Hoboken", "Perth Amboy"
   ];
+
+  const apiRef = useRef<any>(null);
+
+  useEffect(() => {
+    if (!apiRef.current) return;
+    
+    const interval = setInterval(() => {
+      if (apiRef.current) {
+        apiRef.current.scrollNext();
+      }
+    }, 2000); // 2 seconds pause
+    
+    return () => clearInterval(interval);
+  }, [apiRef]);
 
   return (
     <div>
@@ -195,7 +210,9 @@ const Index = () => {
               align: "start",
               loop: true,
               duration: 2000,
-              autoplay: true,
+            }}
+            setApi={(api) => {
+              apiRef.current = api;
             }}
             className="w-full"
           >
