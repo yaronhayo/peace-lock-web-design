@@ -10,14 +10,7 @@ import {
   type CarouselApi
 } from "@/components/ui/carousel";
 
-interface Testimonial {
-  quote: string;
-  author: string;
-  location: string;
-  rating: number;
-}
-
-const testimonials: Testimonial[] = [
+const testimonials = [
   {
     quote: "After being locked out of my house at midnight, their emergency service was a lifesaver. The locksmith arrived in 20 minutes and was incredibly professional.",
     author: "Maria Rodriguez",
