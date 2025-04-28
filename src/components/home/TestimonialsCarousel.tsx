@@ -5,6 +5,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
 } from "@/components/ui/carousel";
 
 interface Testimonial {
@@ -26,7 +28,7 @@ const TestimonialsCarousel = ({ testimonials }: TestimonialsCarouselProps) => {
 
     const interval = setInterval(() => {
       api.scrollNext();
-    }, 4000); // 2s pause + 2s transition
+    }, 4000); // 2s pause + 2s transition time
 
     return () => clearInterval(interval);
   }, [api]);
@@ -40,25 +42,37 @@ const TestimonialsCarousel = ({ testimonials }: TestimonialsCarouselProps) => {
             Don't just take our word for it. See what our satisfied customers have to say about our locksmith services.
           </p>
         </div>
-        <Carousel
-          setApi={setApi}
-          opts={{
-            align: "start",
-            loop: true,
-            dragFree: true,
-            skipSnaps: false,
-            slidesToScroll: 1,
-            startIndex: 0,
-          }}
-        >
-          <CarouselContent className="grid grid-cols-4 gap-4">
-            {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index} className="basis-1/4">
-                <TestimonialCard {...testimonial} />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-        </Carousel>
+        <div className="relative">
+          <Carousel
+            setApi={setApi}
+            opts={{
+              align: "start",
+              loop: true,
+              dragFree: false,
+              skipSnaps: false,
+              containScroll: false,
+            }}
+            className="mx-auto max-w-5xl"
+          >
+            <CarouselContent>
+              {Array.from({ length: Math.ceil(testimonials.length / 4) }).map((_, slideIndex) => (
+                <CarouselItem key={slideIndex} className="w-full">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    {testimonials
+                      .slice(slideIndex * 4, slideIndex * 4 + 4)
+                      .map((testimonial, index) => (
+                        <div key={index} className="h-full">
+                          <TestimonialCard {...testimonial} />
+                        </div>
+                      ))}
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-0 sm:-left-12" />
+            <CarouselNext className="right-0 sm:-right-12" />
+          </Carousel>
+        </div>
       </div>
     </section>
   );

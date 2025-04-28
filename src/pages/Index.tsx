@@ -1,4 +1,3 @@
-
 import Hero from "@/components/Hero";
 import CTA from "@/components/CTA";
 import ServicesList from "@/components/home/ServicesList";
@@ -56,6 +55,36 @@ const Index = () => {
       author: "Jennifer Williams",
       location: "Hoboken, NJ",
       rating: 5
+    },
+    {
+      quote: "Upgraded my home security system with smart locks, and the installer was knowledgeable and efficient. Everything works perfectly!",
+      author: "David Chen",
+      location: "Trenton, NJ",
+      rating: 4
+    },
+    {
+      quote: "Fast response time when our office needed an emergency lock replacement. Great service and fair pricing.",
+      author: "Amanda Taylor",
+      location: "Camden, NJ", 
+      rating: 5
+    },
+    {
+      quote: "Helped me with a complex master key system for my rental properties. Their expertise made managing multiple properties much easier.",
+      author: "Robert Garcia",
+      location: "Passaic, NJ",
+      rating: 5
+    },
+    {
+      quote: "My car key fob stopped working and they fixed it in minutes. Saved me hundreds compared to the dealership quote!",
+      author: "Emily Wilson",
+      location: "Union City, NJ",
+      rating: 5
+    },
+    {
+      quote: "They installed a keypad entry system for our retail store that has worked flawlessly. Great upgrade from traditional keys.",
+      author: "Thomas Lee",
+      location: "Bayonne, NJ",
+      rating: 4
     }
   ];
 
