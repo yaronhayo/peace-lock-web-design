@@ -1,3 +1,4 @@
+
 export interface Testimonial {
   quote: string;
   author: string;
@@ -7,7 +8,7 @@ export interface Testimonial {
 
 export const testimonials: Testimonial[] = [
   {
-    quote: "After being locked out of my house at midnight, their emergency service was a lifesaver. The locksmith arrived in 20 minutes and was incredibly professional.",
+    quote: "After being locked out of my house at midnight, their emergency service was a lifesaver. The locksmith arrived promptly and was incredibly professional.",
     author: "Maria Rodriguez",
     location: "Hoboken, NJ",
     rating: 5
@@ -19,13 +20,13 @@ export const testimonials: Testimonial[] = [
     rating: 5
   },
   {
-    quote: "Had to replace all the locks after moving into our new home. They were prompt, efficient, and the prices were very reasonable.",
+    quote: "Had to replace all the locks after moving into our new home. They were prompt, efficient, and provided excellent service.",
     author: "Sarah Mitchell",
     location: "Newark, NJ",
     rating: 5
   },
   {
-    quote: "Best car key replacement service I've ever used. They came to my location and had me back on the road in no time.",
+    quote: "Best car key replacement service I've ever used. They came to my location and had me back on the road quickly.",
     author: "David Thompson",
     location: "Elizabeth, NJ",
     rating: 5
@@ -61,13 +62,13 @@ export const testimonials: Testimonial[] = [
     rating: 5
   },
   {
-    quote: "Quick response time for my business security upgrade. They really understand commercial security needs.",
+    quote: "Professional response for my business security upgrade. They really understand commercial security needs.",
     author: "Jennifer Lee",
     location: "Camden, NJ",
     rating: 5
   },
   {
-    quote: "Helped me with a car lockout situation. Very quick and professional service at a reasonable price.",
+    quote: "Helped me with a car lockout situation. Very professional service at a reasonable rate.",
     author: "Mark Sullivan",
     location: "Passaic, NJ",
     rating: 5
@@ -91,7 +92,7 @@ export const testimonials: Testimonial[] = [
     rating: 5
   },
   {
-    quote: "Changed all the locks in my rental property. Fast, efficient, and great value for money.",
+    quote: "Changed all the locks in my rental property. Fast, efficient, and great value.",
     author: "Kevin O'Brien",
     location: "Perth Amboy, NJ",
     rating: 5

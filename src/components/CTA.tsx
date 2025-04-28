@@ -24,7 +24,7 @@ const CTA = () => {
             </p>
             <div className="mt-4 flex items-center text-lime">
               <Clock className="mr-2" size={18} />
-              <span>Average response time: 15-30 minutes</span>
+              <span>Available 24/7 for emergency service</span>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4">

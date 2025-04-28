@@ -38,7 +38,7 @@ const ServiceAreas = ({ locations }: ServiceAreasProps) => {
           >
             <h2 className="section-title mb-4">Your Local Security Experts</h2>
             <p className="section-subtitle max-w-3xl mx-auto">
-              Our mobile locksmith teams provide rapid response and professional service throughout New Jersey, arriving at your location in minutes, not hours.
+              Our mobile locksmith teams provide rapid response and professional service throughout New Jersey, arriving at your location promptly when you need us.
             </p>
           </motion.div>
         </div>

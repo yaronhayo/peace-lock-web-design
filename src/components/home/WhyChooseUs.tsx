@@ -13,7 +13,7 @@ const WhyChooseUs = () => {
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Fast Response Time",
-      description: "We arrive within 15-30 minutes in emergency situations, ensuring minimal disruption to your day."
+      description: "We respond quickly in emergency situations, ensuring minimal disruption to your day."
     },
     {
       icon: <ShieldCheck className="w-8 h-8" />,
@@ -22,8 +22,8 @@ const WhyChooseUs = () => {
     },
     {
       icon: <Award className="w-8 h-8" />,
-      title: "Competitive Pricing",
-      description: "Transparent upfront pricing with no hidden fees. Quality security solutions at fair, competitive rates."
+      title: "Quality Service",
+      description: "Transparent upfront service with no hidden fees. Quality security solutions from professionals."
     },
     {
       icon: <Clock className="w-8 h-8" />,
