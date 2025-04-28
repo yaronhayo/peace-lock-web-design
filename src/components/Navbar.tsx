@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -46,7 +45,6 @@ const Navbar = () => {
             <span className="text-2xl font-bold text-white">Peace<span className="text-lime">&amp;Lock</span></span>
           </Link>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <Link
@@ -61,12 +59,11 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <Button className="emergency-btn">
+            <Button className="emergency-btn text-navy-600">
               <a href="tel:+18001234567">Emergency: 800-123-4567</a>
             </Button>
           </nav>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden text-white focus:outline-none"
             onClick={toggleMobileMenu}
@@ -89,7 +86,6 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <nav className="md:hidden pt-4 pb-4 space-y-4 animate-fade-in">
             {navLinks.map((link) => (
@@ -106,7 +102,7 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <Button className="emergency-btn w-full mt-4">
+            <Button className="emergency-btn text-navy-600 w-full mt-4">
               <a href="tel:+18001234567">Emergency: 800-123-4567</a>
             </Button>
           </nav>
