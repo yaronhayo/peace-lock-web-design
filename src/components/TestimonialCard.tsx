@@ -1,5 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
+import { Quote } from "lucide-react";
 
 interface TestimonialCardProps {
   quote: string;
@@ -14,14 +15,14 @@ const TestimonialCard = ({ quote, author, location, rating }: TestimonialCardPro
   }
 
   return (
-    <Card className="bg-white border-none shadow-lg h-[250px] w-[250px] mx-auto">
-      <CardContent className="pt-6 h-full flex flex-col justify-between">
+    <Card className="bg-white border-none shadow-lg h-full">
+      <CardContent className="pt-6 p-6 h-full flex flex-col justify-between">
         <div>
           <div className="flex mb-4" aria-label={`${rating} out of 5 stars`}>
             {Array.from({ length: rating }).map((_, i) => (
               <svg 
                 key={i} 
-                className="w-5 h-5 text-yellow-400" 
+                className="w-4 h-4 text-yellow-400" 
                 fill="currentColor" 
                 viewBox="0 0 20 20"
                 aria-hidden="true"
@@ -30,14 +31,13 @@ const TestimonialCard = ({ quote, author, location, rating }: TestimonialCardPro
               </svg>
             ))}
           </div>
-          <div className="text-navy-600 text-lg">
-            <span className="text-4xl text-navy-300 font-serif leading-none">"</span>
+          <Quote className="text-navy-300 mb-2 h-6 w-6" aria-hidden="true" />
+          <p className="text-navy-600 text-sm leading-relaxed">
             {quote}
-            <span className="text-4xl text-navy-300 font-serif leading-none">"</span>
-          </div>
+          </p>
         </div>
-        <div className="mt-4">
-          <p className="font-medium text-navy-500">{author}</p>
+        <div className="mt-6 pt-4 border-t border-gray-100">
+          <p className="font-semibold text-navy-500">{author}</p>
           {location && <p className="text-gray-500 text-sm">{location}</p>}
         </div>
       </CardContent>
