@@ -4,6 +4,11 @@ import TestimonialCard from "@/components/TestimonialCard";
 import CTA from "@/components/CTA";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 
 const Index = () => {
   const services = [
@@ -54,6 +59,12 @@ const Index = () => {
       quote: "After losing my car keys at the beach, these guys came to the rescue and made me a new key on the spot. Couldn't recommend them more highly!",
       author: "Jennifer Williams",
       location: "Hoboken, NJ",
+      rating: 5
+    },
+    {
+      quote: "Had my locks changed after moving into a new home. The service was efficient, professional, and the price was very reasonable. Great experience!",
+      author: "David Thompson",
+      location: "Paterson, NJ",
       rating: 5
     }
   ];
@@ -179,11 +190,23 @@ const Index = () => {
               Don't just take our word for it. See what our satisfied customers have to say about our locksmith services.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <TestimonialCard key={index} {...testimonial} />
-            ))}
-          </div>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+              duration: 2000,
+              autoplay: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index} className="md:basis-1/3">
+                  <TestimonialCard {...testimonial} />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
         </div>
       </section>
       
