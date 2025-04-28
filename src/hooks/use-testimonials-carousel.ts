@@ -15,7 +15,7 @@ export const useTestimonialsCarousel = (api: CarouselApi | null) => {
 
     const interval = setInterval(() => {
       if (!isPaused) {
-        api.scrollNext(true); // Adding the required argument (true for animation)
+        api.scrollNext(true, true); // Adding both required arguments (first for animation, second likely for loop behavior)
       }
     }, 5000);
 
