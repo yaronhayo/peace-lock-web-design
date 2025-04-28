@@ -1,4 +1,3 @@
-
 import Hero from "@/components/Hero";
 import CTA from "@/components/CTA";
 import ServicesList from "@/components/home/ServicesList";
@@ -6,7 +5,6 @@ import WhyChooseUs from "@/components/home/WhyChooseUs";
 import TestimonialsCarousel from "@/components/home/TestimonialsCarousel";
 import ServiceAreas from "@/components/home/ServiceAreas";
 import TrustBadges from "@/components/home/TrustBadges";
-import EmergencyBanner from "@/components/home/EmergencyBanner";
 import type { LucideProps } from "lucide-react";
 import * as LucideIcons from "lucide-react";
 
@@ -50,7 +48,6 @@ const Index = () => {
 
   return (
     <div className="animate-fade-in">
-      <EmergencyBanner />
       <Hero />
       <TrustBadges />
       <ServicesList services={services} />
