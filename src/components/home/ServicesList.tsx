@@ -2,11 +2,12 @@
 import { useState } from "react";
 import ServiceCard from "@/components/ServiceCard";
 import { motion } from "framer-motion";
+import * as LucideIcons from "lucide-react";
 
 interface Service {
   title: string;
   description: string;
-  icon: string;
+  icon: keyof typeof LucideIcons;
   features: string[];
   link: string;
 }
