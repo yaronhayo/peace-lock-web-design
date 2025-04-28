@@ -34,7 +34,7 @@ const ServiceCard = ({ title, description, icon, features, link }: ServiceCardPr
         </ul>
       </CardContent>
       <CardFooter>
-        <Button className="btn-secondary w-full" asChild>
+        <Button className="btn-secondary w-full text-gray-800" asChild>
           <Link to={link}>Learn More</Link>
         </Button>
       </CardFooter>
