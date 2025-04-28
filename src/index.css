@@ -96,7 +96,7 @@
   }
   
   .emergency-btn {
-    @apply bg-lime text-navy-600 font-bold py-3 px-6 rounded-md hover:bg-lime-400 transition-colors;
+    @apply bg-navy-300 text-white font-bold py-3 px-6 rounded-md hover:bg-lime-400 hover:text-navy-600 border border-white transition-colors;
   }
   
   .section-title {
