@@ -15,8 +15,8 @@ export const useTestimonialsCarousel = (api: CarouselApi | null) => {
 
     const interval = setInterval(() => {
       if (!isPaused) {
-        // Fix: Using scrollNext with the required two arguments
-        api.scrollNext(true, true);
+        // Fix: Call scrollNext with proper arguments according to Embla Carousel API
+        api.scrollNext();
       }
     }, 5000);
 
