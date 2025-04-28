@@ -106,7 +106,7 @@ const Index = () => {
               <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6 mx-auto">
                 ⚡
               </div>
-              <h3 className="text-xl font-bold text-navy-600 mb-3">Fast Response Time</h3>
+              <h3 className="text-xl font-bold text-navy-600 mb-3 text-center">Fast Response Time</h3>
               <p className="text-gray-600">
                 We understand that lockouts and security issues require immediate attention. Our average response time is just 15-30 minutes.
               </p>
@@ -117,7 +117,7 @@ const Index = () => {
               <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6 mx-auto">
                 🔒
               </div>
-              <h3 className="text-xl font-bold text-navy-600 mb-3">Licensed & Insured</h3>
+              <h3 className="text-xl font-bold text-navy-600 mb-3 text-center">Licensed & Insured</h3>
               <p className="text-gray-600">
                 Peace & Lock is a fully licensed, bonded, and insured locksmith company serving New Jersey with the highest standards.
               </p>
@@ -128,7 +128,7 @@ const Index = () => {
               <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6 mx-auto">
                 💰
               </div>
-              <h3 className="text-xl font-bold text-navy-600 mb-3">Competitive Pricing</h3>
+              <h3 className="text-xl font-bold text-navy-600 mb-3 text-center">Competitive Pricing</h3>
               <p className="text-gray-600">
                 We offer transparent pricing with no hidden fees. Get high-quality locksmith services at affordable rates.
               </p>
@@ -139,7 +139,7 @@ const Index = () => {
               <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6 mx-auto">
                 🛠️
               </div>
-              <h3 className="text-xl font-bold text-navy-600 mb-3">Advanced Technology</h3>
+              <h3 className="text-xl font-bold text-navy-600 mb-3 text-center">Advanced Technology</h3>
               <p className="text-gray-600">
                 We stay updated with the latest locksmith tools and technologies to provide you with modern security solutions.
               </p>
@@ -150,7 +150,7 @@ const Index = () => {
               <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6 mx-auto">
                 👨‍🔧
               </div>
-              <h3 className="text-xl font-bold text-navy-600 mb-3">Experienced Locksmiths</h3>
+              <h3 className="text-xl font-bold text-navy-600 mb-3 text-center">Experienced Locksmiths</h3>
               <p className="text-gray-600">
                 Our team consists of highly trained and experienced locksmiths who can handle any lock and key issue.
               </p>
@@ -161,7 +161,7 @@ const Index = () => {
               <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6 mx-auto">
                 ✅
               </div>
-              <h3 className="text-xl font-bold text-navy-600 mb-3">Satisfaction Guarantee</h3>
+              <h3 className="text-xl font-bold text-navy-600 mb-3 text-center">Satisfaction Guarantee</h3>
               <p className="text-gray-600">
                 We're not satisfied until you are. Our work comes with a 100% satisfaction guarantee for your peace of mind.
               </p>
