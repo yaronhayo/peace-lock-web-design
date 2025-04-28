@@ -1,4 +1,3 @@
-
 import { MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -79,7 +78,7 @@ const ServiceAreas = ({ locations }: ServiceAreasProps) => {
           viewport={{ once: true }}
         >
           <p className="text-navy-500 text-lg">
-            Don't see your location? We likely serve it! <a href="/contact" className="text-lime font-bold hover:underline">Contact us</a> to confirm service in your area.
+            Don't see your location? <a href="/contact" className="text-lime font-bold hover:underline highlight-blue">Contact us</a> to confirm service in your area.
           </p>
         </motion.div>
       </div>
