@@ -26,7 +26,7 @@ const TestimonialsCarousel = ({ testimonials }: TestimonialsCarouselProps) => {
 
     const interval = setInterval(() => {
       api.scrollNext();
-    }, 2000);
+    }, 4000); // 2s pause + 2s transition
 
     return () => clearInterval(interval);
   }, [api]);
@@ -40,10 +40,20 @@ const TestimonialsCarousel = ({ testimonials }: TestimonialsCarouselProps) => {
             Don't just take our word for it. See what our satisfied customers have to say about our locksmith services.
           </p>
         </div>
-        <Carousel setApi={setApi}>
-          <CarouselContent>
+        <Carousel
+          setApi={setApi}
+          opts={{
+            align: "start",
+            loop: true,
+            dragFree: true,
+            skipSnaps: false,
+            slidesToScroll: 1,
+            startIndex: 0,
+          }}
+        >
+          <CarouselContent className="grid grid-cols-4 gap-4">
             {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index}>
+              <CarouselItem key={index} className="basis-1/4">
                 <TestimonialCard {...testimonial} />
               </CarouselItem>
             ))}
