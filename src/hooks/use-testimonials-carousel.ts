@@ -9,20 +9,23 @@ export const useTestimonialsCarousel = (api: CarouselApi | null) => {
   useEffect(() => {
     if (!api) return;
 
-    api.on('select', () => {
+    const onSelect = () => {
       setCurrentSlide(api.selectedScrollSnap());
-    });
+    };
+
+    api.on("select", onSelect);
 
     const interval = setInterval(() => {
       if (!isPaused) {
-        // Fix: Call scrollNext with proper arguments
-        api.scrollNext({ loop: true });
+        // Fix: Call scrollNext without additional options, as the API expects a boolean or no arguments
+        api.scrollNext();
       }
     }, 5000);
 
     return () => {
       clearInterval(interval);
-      api.off('select');
+      // Fix: Pass both the event name and the handler function to off
+      api.off("select", onSelect);
     };
   }, [api, isPaused]);
 
