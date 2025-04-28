@@ -23,6 +23,11 @@ const TestimonialsCarousel = ({ testimonials }: TestimonialsCarouselProps) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
 
+  // Early return if no testimonials provided
+  if (!testimonials?.length) {
+    return null;
+  }
+
   useEffect(() => {
     if (!api) return;
 
@@ -82,6 +87,13 @@ const TestimonialsCarousel = ({ testimonials }: TestimonialsCarouselProps) => {
                   currentSlide === index ? 'bg-navy-500' : 'bg-gray-300'
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    api?.scrollTo(index);
+                  }
+                }}
               />
             ))}
           </div>
