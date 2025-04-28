@@ -103,7 +103,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Reason 1 */}
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6">
+              <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6 mx-auto">
                 ⚡
               </div>
               <h3 className="text-xl font-bold text-navy-600 mb-3">Fast Response Time</h3>
@@ -114,7 +114,7 @@ const Index = () => {
             
             {/* Reason 2 */}
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6">
+              <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6 mx-auto">
                 🔒
               </div>
               <h3 className="text-xl font-bold text-navy-600 mb-3">Licensed & Insured</h3>
@@ -125,7 +125,7 @@ const Index = () => {
             
             {/* Reason 3 */}
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6">
+              <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6 mx-auto">
                 💰
               </div>
               <h3 className="text-xl font-bold text-navy-600 mb-3">Competitive Pricing</h3>
@@ -136,7 +136,7 @@ const Index = () => {
             
             {/* Reason 4 */}
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6">
+              <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6 mx-auto">
                 🛠️
               </div>
               <h3 className="text-xl font-bold text-navy-600 mb-3">Advanced Technology</h3>
@@ -147,7 +147,7 @@ const Index = () => {
             
             {/* Reason 5 */}
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6">
+              <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6 mx-auto">
                 👨‍🔧
               </div>
               <h3 className="text-xl font-bold text-navy-600 mb-3">Experienced Locksmiths</h3>
@@ -158,7 +158,7 @@ const Index = () => {
             
             {/* Reason 6 */}
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6">
+              <div className="w-14 h-14 bg-navy-500 rounded-full flex items-center justify-center text-white text-2xl mb-6 mx-auto">
                 ✅
               </div>
               <h3 className="text-xl font-bold text-navy-600 mb-3">Satisfaction Guarantee</h3>
