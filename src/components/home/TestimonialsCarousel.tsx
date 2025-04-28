@@ -87,7 +87,7 @@ const TestimonialsCarousel = ({ testimonials }: TestimonialsCarouselProps) => {
             {testimonials.map((_, index) => (
               <button
                 key={index}
-                onClick={() => api?.scrollTo(index)}
+                onClick={() => api?.scrollTo(index, true)}
                 className={`w-3 h-3 rounded-full transition-colors ${
                   currentSlide === index ? 'bg-navy-500' : 'bg-gray-300'
                 }`}
@@ -96,7 +96,7 @@ const TestimonialsCarousel = ({ testimonials }: TestimonialsCarouselProps) => {
                 onKeyDown={(e) => {
                   if (e.key === 'Enter' || e.key === ' ') {
                     e.preventDefault();
-                    api?.scrollTo(index);
+                    api?.scrollTo(index, true);
                   }
                 }}
               />
