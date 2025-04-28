@@ -23,7 +23,7 @@ const CTA = () => {
                 Call Now
               </a>
             </Button>
-            <Button variant="outline" className="border-white text-white hover:bg-white/10" asChild>
+            <Button className="bg-navy-600 text-white hover:bg-lime hover:text-navy-600 border border-white transition-colors" asChild>
               <Link to="/contact">Contact Us</Link>
             </Button>
           </div>
