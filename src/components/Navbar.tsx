@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -124,7 +125,7 @@ const Navbar = () => {
 
       <button
         onClick={scrollToTop}
-        className={`fixed bottom-8 right-8 p-3 rounded-full bg-lime text-navy-600 shadow-lg transition-all duration-300 hover:bg-lime-400 focus:outline-none focus:ring-2 focus:ring-lime-300 ${
+        className={`fixed bottom-20 right-8 p-3 rounded-full bg-lime text-navy-600 shadow-lg transition-all duration-300 hover:bg-lime-400 focus:outline-none focus:ring-2 focus:ring-lime-300 ${
           showScrollTop ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'
         }`}
         aria-label="Scroll to top"
