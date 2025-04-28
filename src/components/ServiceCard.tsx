@@ -15,10 +15,12 @@ const ServiceCard = ({ title, description, icon, features, link }: ServiceCardPr
   return (
     <Card className="transition-all duration-300 hover:shadow-lg bg-white border-none hover:shadow-navy-100">
       <CardHeader className="pb-2">
-        <div className="w-12 h-12 bg-navy-50 rounded-lg flex items-center justify-center text-navy-500 text-3xl mb-4">
-          {icon}
+        <div className="flex justify-center">
+          <div className="w-16 h-16 bg-navy-50 rounded-full flex items-center justify-center text-navy-500 text-4xl mb-4">
+            {icon}
+          </div>
         </div>
-        <CardTitle className="text-xl text-navy-600">{title}</CardTitle>
+        <CardTitle className="text-xl text-navy-600 text-center">{title}</CardTitle>
       </CardHeader>
       <CardContent className="pt-2">
         <CardDescription className="text-gray-600 mb-6">{description}</CardDescription>
