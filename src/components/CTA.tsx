@@ -18,7 +18,10 @@ const CTA = () => {
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button className="bg-lime text-navy-600 hover:bg-lime-400 font-bold transition-colors" asChild>
-              <a href="tel:+18001234567"><Phone className="mr-2" size={18} /> Call Now</a>
+              <a href="tel:+18001234567">
+                <Phone className="mr-2 text-navy-600" size={18} strokeWidth={2.5} />
+                Call Now
+              </a>
             </Button>
             <Button variant="outline" className="border-white text-white hover:bg-white/10" asChild>
               <Link to="/contact">Contact Us</Link>
@@ -31,3 +34,4 @@ const CTA = () => {
 };
 
 export default CTA;
+
