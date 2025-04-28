@@ -7,7 +7,7 @@ import EmergencyServices from "@/components/services/EmergencyServices";
 
 const Services = () => {
   return (
-    <div>
+    <div className="animate-fade-in">
       <ServicesHero />
       <ResidentialServices />
       <CommercialServices />

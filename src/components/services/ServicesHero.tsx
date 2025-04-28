@@ -12,7 +12,7 @@ const ServicesHero = () => {
           <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
             Comprehensive locksmith solutions for all your residential, commercial, and automotive needs.
           </p>
-          <Button className="btn-primary">
+          <Button className="btn-primary" asChild>
             <a href="tel:+18001234567">Call for Emergency Service</a>
           </Button>
         </div>
