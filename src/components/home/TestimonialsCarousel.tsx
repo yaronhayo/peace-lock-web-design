@@ -46,26 +46,17 @@ const TestimonialsCarousel = ({ testimonials }: TestimonialsCarouselProps) => {
           <Carousel
             setApi={setApi}
             opts={{
-              align: "start",
+              align: "center",
               loop: true,
-              dragFree: false,
-              skipSnaps: false,
-              containScroll: false,
+              slidesToScroll: 1,
+              startIndex: 0,
             }}
             className="mx-auto max-w-5xl"
           >
-            <CarouselContent>
-              {Array.from({ length: Math.ceil(testimonials.length / 4) }).map((_, slideIndex) => (
-                <CarouselItem key={slideIndex} className="w-full">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                    {testimonials
-                      .slice(slideIndex * 4, slideIndex * 4 + 4)
-                      .map((testimonial, index) => (
-                        <div key={index} className="h-full">
-                          <TestimonialCard {...testimonial} />
-                        </div>
-                      ))}
-                  </div>
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
+                  <TestimonialCard {...testimonial} />
                 </CarouselItem>
               ))}
             </CarouselContent>
