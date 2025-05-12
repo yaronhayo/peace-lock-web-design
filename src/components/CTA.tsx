@@ -3,17 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Phone, Clock, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const CTA = () => {
-  const revealRef = useScrollReveal({ threshold: 0.2 });
-  
   return (
     <div className="bg-navy-500 py-16 md:py-20">
       <div className="container mx-auto px-4">
         <motion.div 
-          className="flex flex-col md:flex-row items-center justify-between scroll-reveal"
-          ref={revealRef}
+          className="flex flex-col md:flex-row items-center justify-between"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -26,19 +22,19 @@ const CTA = () => {
             <p className="text-gray-300 text-lg max-w-lg">
               Our emergency locksmith technicians are standing by 24/7, ready to assist whenever you need us. Don't stay locked out.
             </p>
-            <div className="mt-4 flex items-center text-lime-600">
+            <div className="mt-4 flex items-center text-lime">
               <Clock className="mr-2" size={18} />
               <span>Available 24/7 for emergency service</span>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button className="bg-lime-600 text-[#071d38] hover:bg-lime-400 font-bold transition-colors hover-scale" asChild>
+            <Button className="bg-lime text-navy-600 hover:bg-lime-400 font-bold transition-colors" asChild>
               <a href="tel:+18001234567">
-                <Phone className="mr-2 text-[#071d38]" size={18} strokeWidth={2.5} />
+                <Phone className="mr-2 text-navy-600" size={18} strokeWidth={2.5} />
                 Call Now
               </a>
             </Button>
-            <Button className="bg-navy-600 text-white hover:bg-lime-600 hover:text-[#071d38] border border-white transition-colors hover-scale" asChild>
+            <Button className="bg-navy-600 text-white hover:bg-lime hover:text-navy-600 border border-white transition-colors" asChild>
               <Link to="/contact">
                 Contact Us <ArrowRight className="ml-2" size={16} />
               </Link>

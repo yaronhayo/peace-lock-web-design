@@ -72,7 +72,7 @@ const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <Button className="emergency-btn text-[#071d38]">
+              <Button className="emergency-btn text-white">
                 <a href="tel:+18001234567">Emergency: 800-123-4567</a>
               </Button>
             </nav>
@@ -115,7 +115,7 @@ const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <Button className="emergency-btn text-[#071d38] w-full mt-4">
+              <Button className="emergency-btn text-white w-full mt-4">
                 <a href="tel:+18001234567">Emergency: 800-123-4567</a>
               </Button>
             </nav>

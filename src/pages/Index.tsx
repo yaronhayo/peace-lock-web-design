@@ -8,7 +8,6 @@ import ServiceAreas from "@/components/home/ServiceAreas";
 import TrustBadges from "@/components/home/TrustBadges";
 import type { LucideProps } from "lucide-react";
 import * as LucideIcons from "lucide-react";
-import { useEffect } from "react";
 
 const Index = () => {
   const services = [
@@ -47,42 +46,6 @@ const Index = () => {
     "Trenton", "Camden", "Passaic", "Union City", "Bayonne",
     "East Orange", "Vineland", "New Brunswick", "Hoboken", "Perth Amboy"
   ];
-  
-  // Initialize scroll animations
-  useEffect(() => {
-    const initScrollAnimations = () => {
-      const scrollElements = document.querySelectorAll('.scroll-reveal');
-      
-      const elementInView = (el: Element, scroll = 0) => {
-        const elementTop = el.getBoundingClientRect().top;
-        return (
-          elementTop <= (window.innerHeight || document.documentElement.clientHeight) * 0.8
-        );
-      };
-      
-      const displayScrollElement = (element: Element) => {
-        element.classList.add('visible');
-      };
-      
-      const handleScrollAnimation = () => {
-        scrollElements.forEach((el) => {
-          if (elementInView(el, 100)) {
-            displayScrollElement(el);
-          }
-        });
-      };
-      
-      window.addEventListener('scroll', handleScrollAnimation);
-      // Run once on initial load
-      handleScrollAnimation();
-      
-      return () => {
-        window.removeEventListener('scroll', handleScrollAnimation);
-      };
-    };
-    
-    initScrollAnimations();
-  }, []);
 
   return (
     <div className="animate-fade-in">
